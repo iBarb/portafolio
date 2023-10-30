@@ -3,9 +3,10 @@ import './Home.css'
 import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useState } from 'react';
+import Background from '../Background/Background';
 
 const Home = ({ scroll }) => {
-    const rotacion = scroll / 11
+    const rotacion = scroll / 13
     const limitedRotacion = rotacion > 90 ? 90 : rotacion;
 
     const [ConsoleW, setConsoleW] = useState(0);
@@ -25,6 +26,7 @@ const Home = ({ scroll }) => {
 
     return (
         <section id="home">
+            <Background/>
             <div className='console' id='Console' style={{ transform: `perspective(${ConsoleW}px) rotatex(-${limitedRotacion}deg)` }}>
                 <div className='head'>
                     <div className='options d-flex gap-2'>

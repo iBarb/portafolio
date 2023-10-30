@@ -1,5 +1,9 @@
+.container-fluid{
+    max-width: 1800px;
+}
+
 .navbar {
-    padding: 0 4rem;
+    padding: 0 2rem;
     padding-top: 2rem;
     position: fixed;
     z-index: 10;

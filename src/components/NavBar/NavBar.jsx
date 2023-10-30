@@ -1,8 +1,8 @@
 import React from 'react';
+import logo from '../../assets/Logo_Bruno-min.png'
 import './NavBar.css'
 
 const NavBar = ({ scroll }) => {
-    const logo = 'https://media.discordapp.net/attachments/880930626386153492/999072223648288868/Logo_Bruno.png'
 
     const windowWidth = window.innerWidth < 767
 
@@ -40,7 +40,7 @@ const NavBar = ({ scroll }) => {
                 <div className="container-fluid">
                     <div className="navbar-brand">
                         <a href="#">
-                            <img src={logo} alt="Bruno Barbaran logo" height="35" className="d-inline-block align-text-top" />
+                            <img src={logo} alt="Bruno Barbaran logo" width="39.5" height="35" className="d-inline-block align-text-top" />
                         </a>
                     </div>
                     <div style={windowWidth ? {} : { transform: `translateY(-${scroll}px)` }} >
@@ -61,7 +61,7 @@ const NavBar = ({ scroll }) => {
                 <div className="container-fluid">
                     <div className="navbar-brand">
                         <a href="#">
-                            <img src={logo} alt="Bruno Barbaran logo" height="35" className="d-inline-block align-text-top" />
+                            <img src={logo} alt="Bruno Barbaran logo" width="39.5" height="35" className="d-inline-block align-text-top" />
                         </a>
                     </div>
 

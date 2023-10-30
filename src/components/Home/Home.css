@@ -5,12 +5,13 @@
 }
 
 .console {
-    width: 95%;
+    width: 85%;
     max-width: 1400px;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
     border: 1px solid var(--console-border);
-    transform-origin: 50% 0%
+    transform-origin: 50% 0%;
+    background-color: var(--bs-body-bg);
 }
 
 
@@ -54,7 +55,7 @@
     height: 100%;
     padding: 8px;
     position: relative;
-    background: linear-gradient(135deg,  rgba(var(--console-secondary),0.04) 40%, rgb(var(--bs-body-bg-rgb)) 70%);
+    background: linear-gradient(135deg, rgba(var(--console-secondary), 0.04) 40%, rgb(var(--bs-body-bg-rgb)) 70%);
 }
 
 
@@ -73,7 +74,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    
+
 }
 
 .console .content::after {
@@ -83,5 +84,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg,  transparent 40%, rgb(var(--bs-body-bg-rgb)) 70%);
+    background: linear-gradient(135deg, transparent 40%, rgb(var(--bs-body-bg-rgb)) 70%);
+}
+
+@media (max-width: 1000px) {
+    .console {
+        width: 90%;
+    }
 }
