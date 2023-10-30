@@ -1,0 +1,87 @@
+#home {
+    padding-top: 6.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.console {
+    width: 95%;
+    max-width: 1400px;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    border: 1px solid var(--console-border);
+    transform-origin: 50% 0%
+}
+
+
+.console .head .options {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 0 20px;
+}
+
+.console .head .option {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid var(--console-border);
+    transition: all 0.3s ease;
+}
+
+.console:hover .option:nth-child(1) {
+    background-color: #F36C5F;
+}
+
+.console:hover .option:nth-child(2) {
+    background-color: #F8BD4D;
+}
+
+.console:hover .option:nth-child(3) {
+    background-color: #53C14F;
+}
+
+.console .out-body {
+    height: 100%;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.console .body {
+    border: 1px solid var(--console-border);
+    border-radius: 10px;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    background: linear-gradient(135deg,  rgba(var(--console-secondary),0.04) 40%, rgb(var(--bs-body-bg-rgb)) 70%);
+}
+
+
+.console .content {
+    height: 100%;
+    background: radial-gradient(circle, #8585854d 10%, transparent 0%);
+    background-size: 1em 1em;
+    opacity: 1;
+    position: relative;
+}
+
+.console .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.console .content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,  transparent 40%, rgb(var(--bs-body-bg-rgb)) 70%);
+}
